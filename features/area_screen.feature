@@ -26,12 +26,18 @@ Feature: User is able to convert area units
       |2     |2000000|
       |3     |3000000|
 
+  Scenario:
+    Given I click on Clear button
+    When I click on From field
+    And I tap "3" on soft keyboard
+    Then I get "3000000" in To field
+
   @wip
   Scenario:
     Given I click on Clear button
     When I click on From field
-    And I press "3" on soft keyboard
-    Then I get "3000000" in To field
+    And I tap "12" on soft keyboard
+    Then I get "12000000" in To field
 
 
 

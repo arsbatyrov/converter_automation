@@ -47,7 +47,11 @@ When(/^I click on From field$/) do
   find_element(id: "header_value_from").click
 end
 
-And(/^I press "([^"]*)" on soft keyboard$/) do |value|
-  digit = Integer(value)
-  press_keycode 7 + digit
+And(/^I tap "([^"]*)" on soft keyboard$/) do |value|
+  digits = value.split("")
+  digits.each do |key|
+    digit = Integer(key)
+    press_keycode 7 + digit
+  end
+  sleep(3)
 end
