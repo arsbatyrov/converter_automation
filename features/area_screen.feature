@@ -32,12 +32,17 @@ Feature: User is able to convert area units
     And I tap "3" on soft keyboard
     Then I get "3000000" in To field
 
-  @wip
   Scenario:
     Given I click on Clear button
     When I click on From field
     And I tap "12" on soft keyboard
     Then I get "12000000" in To field
+
+  @wip
+  Scenario:
+    When I select "Hectare" from left column
+    Then I see "Hectare" in From header
+    And I get "10000" in To field
 
 
 
