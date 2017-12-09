@@ -15,7 +15,8 @@ Feature: User is able to conver Volume units
     Then I land on "<result>" screen
 
     Examples:
-      |target|result|
-      |Power |Power |
-      |Volume|Volume|
-      |Currency|Currency|
+      |target|result    |
+#      |Power   |Power   |
+#      |Volume  |Volume  |
+#      |Currency|Currency|
+      |Notavalue|Power  |
