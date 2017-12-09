@@ -15,7 +15,7 @@ And(/^I select "([^"]*)" from menu$/) do |value|
   until exists {find_element(id: "design_navigation_view").find_element(xpath: "//android.widget.CheckedTextView[@text='#{value}']")} do
     action.perform
   end
-  
+
   find_element(id: "design_navigation_view").find_element(xpath: "//android.widget.CheckedTextView[@text='#{value}']").click
 end
 
