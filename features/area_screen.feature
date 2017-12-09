@@ -1,3 +1,4 @@
+@area
 Feature: User is able to convert area units
 
   Background:
@@ -38,6 +39,7 @@ Feature: User is able to convert area units
     And I tap "12" on soft keyboard
     Then I get "12000000" in To field
 
+  @wip
   Scenario:
     When I select "Hectare" from left column
     Then I see "Hectare" in From header
