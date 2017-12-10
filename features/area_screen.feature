@@ -1,4 +1,4 @@
-Feature: User is able to conver area units
+Feature: User is able to convert area units
 
   Scenario: User is able to dismiss Help
     Given I land on Help popup
