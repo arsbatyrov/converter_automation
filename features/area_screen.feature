@@ -1,22 +1,24 @@
-Feature: User is able to conver area units
-
-  @help
-  Scenario: User is able to dismiss Help
-    Given I land on Help popup
+@area
+Feature: User is able to convert area units
+  @menu
+  Scenario: User is able to dismiss help
+    Given I land on help popup
     When I click on Got it button
     Then I land on Area screen
 
+  @wip
   Scenario: User is able to swap values
-    Given I see "Sq Kilometre" in From header
-    Given I see "Sq Metre" in To header
+    Given I click on Got it button
+    And I see "Sq Kilometre" in From header
+    And I see "Sq Metre" in To header
     When I click on Swap button
-    And I see "Sq Metre" in From header
+    Then I see "Sq Metre" in From header
     And I see "Sq Kilometre" in To header
 
-  @wip
   Scenario Outline: User is able to convert default units
-    Given I click on Clear button
-    When I enter "<target>" in From field
+    Given I click on Got it button
+    And I click on Clear button
+    When I enter "<target>" to From field
     Then I get "<result>" in To field
     Examples:
       |target|result|

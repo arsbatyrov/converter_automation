@@ -1,4 +1,4 @@
-Given(/^I land on Help popup$/) do
+Given(/^I land on help popup$/) do
   puts("User lands on Help popup")
 end
 
@@ -10,23 +10,23 @@ Then(/^I land on Area screen$/) do
   puts("User lands on Area screen")
 end
 
-And(/^I see "([^"]*)" in From header$/) do |value|
-  puts("Left header value is " + value)
-end
-
-And(/^I see "([^"]*)" in To header$/) do |value|
-  puts("Right header value is #{value}")
-end
-
 When(/^I click on Swap button$/) do
   puts("User clicks Swap button")
 end
 
-Given(/^I click on Clear button$/) do
+Then(/^I see "([^"]*)" in From header$/) do |value|
+  puts("From header values is " + value)
+end
+
+And(/^I see "([^"]*)" in To header$/) do |value|
+  puts("To header values is #{value}")
+end
+
+And(/^I click on Clear button$/) do
   puts("User clicks on Clear button")
 end
 
-When(/^I enter "([^"]*)" in From field$/) do |value|
+When(/^I enter "([^"]*)" to From field$/) do |value|
   puts("User entered value #{value}")
 end
 
