@@ -1,13 +1,13 @@
 Given(/^I land on help popup$/) do
-  text("Help")
+  puts("User lands on Help popup")
 end
 
 When(/^I click on Got it button$/) do
-  find_element(id: "button1").click
+  puts("User clicks on Got it button")
 end
 
 Then(/^I land on Area screen$/) do
-  text("Area")
+  puts("User lands on Area screen")
 end
 
 When(/^I click on Swap button$/) do
