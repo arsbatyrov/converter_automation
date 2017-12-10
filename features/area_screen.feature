@@ -6,6 +6,7 @@ Feature: User is able to conver area units
     Then I land on Area screen
 
   Scenario: User is able to swap values
+    Given I click on Got it button
     Given I see "Sq Kilometre" in From header
     Given I see "Sq Metre" in To header
     When I click on Swap button
