@@ -26,7 +26,7 @@ Given(/^I click on Clear button$/) do
   puts("User clicks on Clear button")
 end
 
-When(/^I enter "([^"]*)" in From field$/) do |value|
+When(/^I enter "([^"]*)" to From field$/) do |value|
   puts("User entered value #{value}")
 end
 
