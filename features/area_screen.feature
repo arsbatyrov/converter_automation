@@ -6,14 +6,16 @@ Feature: User is able to conver area units
     Then I land on Area screen
 
   Scenario: User is able to swap values
-    Given I see "Sq Kilometre" in From header
-    Given I see "Sq Metre" in To header
+    Given I click on Got it button
+    And I see "Sq Kilometre" in From header
+    And I see "Sq Metre" in To header
     When I click on Swap button
     And I see "Sq Metre" in From header
     And I see "Sq Kilometre" in To header
 
   Scenario Outline: User is able to convert default units
-    Given I click on Clear button
+    Given I click on Got it button
+    And I click on Clear button
     When I enter "<target>" in From field
     Then I get "<result>" in To field
     Examples:
