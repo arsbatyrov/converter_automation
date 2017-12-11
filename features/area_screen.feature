@@ -1,8 +1,8 @@
 @area
 Feature: User is able to convert area units
-  @menu
+
   Scenario: User is able to dismiss help
-    Given I land on help popup
+    Given I land on Help popup
     When I click on Got it button
     Then I land on Area screen
 
